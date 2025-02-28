@@ -1,0 +1,301 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+label {
+	font-weight: bold;
+}
+
+.menu {
+	background-color: #CE4444;
+	padding: 10px;
+	text-align: center;
+	margin-top: 0;
+}
+
+#typeSelect {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 8px;
+	width: 260px;
+	text-align: center;
+}
+
+.logo-pokedex {
+	height: 65px;
+	width: auto;
+	max-width: 100%;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+#pokemonList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	flex-grow: 1;
+}
+
+h2{
+	font-size: 24px;
+}
+
+.pokemonCard {
+	background: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	width: 350px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.2s;
+	position: relative;
+}
+
+.pokemonCard:hover {
+	transform: scale(1.02);
+}
+
+.pokemonCard img {
+	max-width: 30%;
+}
+
+.pokemonCard h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.pokemonInfo {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.pokemonInfo p {
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.stat-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.stat-label {
+	width: 100px;
+	text-align: left;
+	font-size: 14px;
+	color: #555;
+}
+
+.stat-bar {
+	width: 170px;
+	height: 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.stat-progress {
+	height: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+.stat-hp .stat-progress {
+	background-color: #FF4040;
+}
+
+.stat-attack .stat-progress {
+	background-color: #FF8C00;
+}
+
+.stat-defense .stat-progress {
+	background-color: #FFD700;
+}
+
+.stat-speed .stat-progress {
+	background-color: #32CD32;
+}
+
+.stat-special-attack .stat-progress {
+	background-color: #FF69B4;
+}
+
+.stat-special-defense .stat-progress {
+	background-color: #00CED1;
+}
+
+.stat-value {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
+.pokemonTypes {
+	margin-top: 10px;
+}
+
+.pokemonType {
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 5px;
+	background-color: #f0f0f0;
+	border-radius: 15px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.fire {
+	background-color: #E25903;
+}
+
+.water {
+	background-color: #0dc9f3;
+}
+
+.electric {
+	background-color: #F8D030;
+}
+
+.grass {
+	background-color: #00ff00;
+}
+
+.bug {
+	background-color: #A8B820;
+}
+
+.normal {
+	background-color: #A8A878;
+}
+
+.psychic {
+	background-color: #ff00ff;
+}
+
+.fairy {
+	background-color: #F0B6BC;
+}
+
+.ghost {
+	background-color: #705898;
+}
+
+.dragon {
+	background-color: #7038F8;
+}
+
+.ice {
+	background-color: #00c3ff;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.rock {
+    background-color: #B8A038;
+}
+
+.fighting {
+    background-color: #C03028;
+}
+
+.poison {
+	background-color: #A040A0;
+}
+
+.ground {
+	background-color: #f5deb3;
+}
+
+.flying {
+	background-color: #A890F0; 
+}
+
+.steel {
+	background-color: #B8B8D0;
+}
+
+.pokemonEvolution {
+	font-size: 14px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 15px;
+	color: #333;
+}
+
+footer {
+	background-color: #0d5820;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 0.69em;
+	padding: 18px;
+	line-height: 1.9em;
+	margin-top: auto; /* Empura o footer para o final da página */
+}
+
+/* Estilos para a paginação */
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-top: auto;
+}
+
+.pagination a {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+/* Estilo do botão desabilitado (cinza) */
+.disabled {
+    color: #ccc;
+    cursor: default !important; /* Impede o clique */
+    background-color: #adadad !important;
+    text-decoration: none;
+}
+
+/* Estilo do botão habilitado (verde) */
+.enabled {
+    color: white;
+    background-color: green; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hover para o botão habilitado */
+.enabled:hover {
+    background-color: darkgreen;
+}
